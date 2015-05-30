@@ -12,12 +12,13 @@ module.exports = function(grunt) {
 			markerAnimate: {
 				options: {
 					src: 'jquery.easing.1.3.js',
-					dest: 'dist/jquery.easing.1.3.js',
+					dest: 'dist/jquery.easing.1.3.umd.js',
 					deps: {
 						'default': ['jQuery'],
 						amd: ['jquery'],
 						cjs: ['jquery']
-					}
+					},
+					objectToExport: "jQuery"
 				}
 			}
 		},
@@ -28,8 +29,8 @@ module.exports = function(grunt) {
 				banner: '/* <%= grunt.task.current.target %> v<%= pkg.version %> <%= grunt.template.today("dd-mm-yyyy") %> Node wrapper for jQuery Easing plugin (C) 2015 Terikon Software */\n'
 			},
 			markerAnimate: {
-				src: 'dist/jquery.easing.1.3.js',
-				dest: 'dist/jquery.easing.1.3.min.js'
+				src: 'dist/jquery.easing.1.3.umd.js',
+				dest: 'dist/jquery.easing.1.3.umd.min.js'
 			}
 		},
 

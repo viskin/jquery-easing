@@ -10,3 +10,9 @@ To install:
 ```
 npm install jquery-easing
 ```
+
+Usage:
+
+```js
+var jQuery = require("jquery-easing");
+```

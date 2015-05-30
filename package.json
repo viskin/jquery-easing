@@ -3,7 +3,7 @@
   "title": "jquery-easing",
   "version": "0.0.1",
   "description": "node wrapper for jQuery Easing plugin by George McGinley Smith",
-  "main": "dist/jquery.easing.1.3.js",
+  "main": "dist/jquery.easing.1.3.umd.js",
   "scripts": {
     "//": "use '|| true' to prevent warning",
     "build": "npm install && grunt",
